@@ -1,0 +1,2 @@
+# Konfigurasi Bandit - abaikan folder tests (assert dipakai pada pytest)
+exclude_dirs: ["tests", ".venv"]
