@@ -29,7 +29,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run unit tests (Quality Gate - coverage >= 80%)
-        run: pytest -v --cov=taskmanager --cov-report=term-missing --cov-fail-under=80
+                run: python -m pytest -v --cov=taskmanager --cov-report=term-missing --cov-fail-under=80
 
   sast-scan:
     name: SAST Scan (Bandit)

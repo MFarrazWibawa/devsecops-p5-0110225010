@@ -13,8 +13,8 @@ Data disimpan dalam file JSON lokal.
 
 ## 3. Cara Menjalankan
 ```bash
-git clone https://github.com/<username>/devsecops-p5-NIM.git
-cd devsecops-p5-NIM
+git clone https://github.com/MFarrazWibawa/devsecops-p5-0110225010.git
+cd devsecops-p5-0110225010
 pip install -r requirements.txt
 
 python main.py add "Kerjakan laporan" --priority high --due 2026-11-01
