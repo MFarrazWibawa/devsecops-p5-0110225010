@@ -1,8 +1,6 @@
-﻿"""Modul ekspor tugas (SENGAJA RENTAN - hanya untuk uji Quality Gate)."""
-import subprocess
+﻿"""Modul ekspor tugas (versi aman)."""
+import shutil
 
 
 def export_tasks(filename):
-    # Rentan: input pengguna masuk ke shell (command injection)
-    cmd = "cat tasks.json > " + filename
-    subprocess.call(cmd, shell=True)
+    shutil.copyfile("tasks.json", filename)
